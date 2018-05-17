@@ -1,0 +1,72 @@
+<!--index.wxml-->
+<view class="container">
+  <image src="../asscts/tel.jpg" class="tel-icon" bindtap='call'></image>
+  <view class="wrap">
+    <swiper autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" current="{{currentSwiper}}" bindchange="swiperChange">
+        <block wx:for="{{imgUrls}}" wx:key="{{item.id}}">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" width="100%"/>
+        </swiper-item>
+      </block>
+    </swiper>
+    <view class="dots">    
+      <block wx:for="{{imgUrls}}"  wx:key="{{item.id}}"> 
+        <view class="dot{{index == currentSwiper ? ' active' : ''}}"></view>    
+      </block>    
+    </view> 
+  </view>
+  <view class="lineBox">
+    <text class="line">案例展示</text>
+  </view>
+  <view class="lineBox-bottom"></view>
+  <view class="scroll-box">
+    <scroll-view scroll-x="true" style="width:auto;">
+      <view wx:for="{{product}}" wx:key="{{product.id}}" class="scroll-box-box" bindtap='toUrl' id="{{index}}">    
+        <image src="{{item.src}}" class="scroll-img" mode="aspectFill"></image>
+        <text class="scroll-text">{{item.name}}</text>
+      </view>
+    </scroll-view>
+  </view>
+  <view class="lineBox">
+    <text class="line">服务流程</text>
+  </view>
+  <view class="lineBox-bottom"></view>
+  <view class="service">
+    <view class="service-box service-after">
+      <image src="../asscts/s1.png" class="service-img"></image>
+      <text class="service-text">客户提供图纸精准报价</text>
+    </view>
+    <view class="service-box service-after">
+      <image src="../asscts/s2.png" class="service-img"></image>
+      <text class="service-text">签订合同付款</text>
+    </view>
+    <view class="service-box service-after">
+      <image src="../asscts/s3.png" class="service-img"></image>
+      <text class="service-text">放样，生产</text>
+    </view>
+    <view class="service-box">
+      <image src="../asscts/s4.png" class="service-img"></image>
+      <text class="service-text">收货，安装，尾款结清</text>
+    </view>
+  </view>
+  <view class="about-box">
+    <view class="contract">
+      <text class="QQ">联系QQ:</text>
+      <text class="QQ-num">1852174600</text>
+      <image src="http://mingheshiye.com/outlink/AFEIi68GEAQYACD1oOLWBSjw6ODwBTC-AjiiAkBo.png" class="contract-img"></image>
+    </view>
+    <view class="contract-right">
+      <view class="contract-right-top">
+        <image src="http://mingheshiye.com/outlink/AFEIi68GEAQYACCHpuLWBSi1ypSiAzCkAziMAUBo.png" class="contract-right-top-img"></image>
+        <text class="number">服务热线：</text>
+        <text class="tel-number">0574-89026566
+        15869148736</text>
+      </view>
+      <view class="contract-right-bottom">
+        <image src="http://mingheshiye.com/outlink/AFEIi68GEAQYACCeoeLWBSj2peidBzCkAziMAUBo.png" class="contract-right-bottom-img"></image>
+        <view class="mail">公司邮箱</view>
+        <view class="mail-number">contract@fkadjkhsf.com</view>
+      </view>
+    </view>
+  </view>
+</view>

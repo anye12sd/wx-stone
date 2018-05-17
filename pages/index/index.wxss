@@ -1,0 +1,236 @@
+/**index.wxss**/
+.clear::after{
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.wrap{
+  width:100%;
+  position:relative;
+}
+.dots{
+  width: 156rpx;  
+  height: 25rpx;   
+  display: flex;  
+  flex-direction: row;  
+  position: absolute;  
+  right: 0rpx;  
+  bottom: 10rpx; 
+}
+/*未选中时的小圆点样式 */  
+.dot{    
+  width: 13rpx;    
+  height: 13rpx;     
+  border-radius: 50%;  
+  margin-right: 26rpx;  
+  background-color: white; 
+}    
+/*选中以后的小圆点样式  */  
+.active{    
+  width: 13rpx;     
+  height: 13rpx;  
+  background-color: coral;  
+} 
+.slide-image{
+  width:100%;
+  height:200px;
+}
+swiper{  
+    margin: 0 auto;  
+    height: 200px;  
+    width: 100%;  
+} 
+.lineBox{
+  font-size: 16px;
+  padding:15px 0;  
+  color:#666;
+  position: relative;
+}
+.line::before{
+  content:"";
+  position:absolute;
+  top:52%;
+  background: #999;
+  left:-25px;
+  width: 25%;
+  height: 1px;
+}
+.line::after{
+  content:"";
+  position:absolute;
+  top:52%;
+  background: #999;
+  right:-25px;
+  width: 25%;
+  height: 1px;
+}
+.lineBox-bottom{
+  width:100%;
+  height:1px;
+  background: #eee
+}
+.scroll-box{
+  width:100%;
+  white-space: nowrap;
+  padding:15px;
+  border-bottom:7px solid #eee
+}
+.scroll-box-box{
+  display: inline-block;
+  margin-right: 20px;
+  width:150px;
+  position: relative;
+  height:150px;
+}
+.scroll-box-box:nth-child(1){
+  margin-left: 20px
+}
+.scroll-img{
+  width:100%;
+  height:100px;
+  border-radius: 5px 5px 0 0
+}
+.scroll-text{
+  display: block;
+  font-size: 12px;
+  color:#666;
+  height:35px;
+  padding-top:10px;
+  padding-left:10px;
+  border: 1px solid #eee;
+  border-top:0;
+  position: absolute;
+  top:100px;
+  left:0;
+  right:0;
+}
+.service{
+  width:100%;
+  display: flex;
+  text-align: center;
+  padding:10px 0;
+  border-bottom:7px solid #eee
+}
+.service-box{
+  flex:1;
+  width: 25%;
+  padding:0 15px;
+  position: relative
+}
+.service-after::after{
+    content: " ";
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+    border-width: 2px 2px 0 0 ;
+    border-color: #C8C8CD;
+    border-style: solid;
+    -webkit-transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+    transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+    position: absolute;
+    top: 18px;
+    right: 0px;
+}
+.service-img{
+  width: 48px;
+  height:48px;
+  margin: 0 auto
+}
+.service-text{
+  text-align: center;
+  display: block;
+  font-size: 14px;
+}
+.about-box{
+  width: 100%;
+  background: #eee;
+  position: relative
+}
+.contract{
+  width: 45%;
+  position: relative;
+  float: left;
+}
+.QQ{
+  display: block;
+  font-size: 14px;
+  color:#666;
+  position: absolute;
+  top:8px;
+  left: 0;
+  right:0;
+  text-align: center
+}
+.QQ-num{
+  font-size: 14px;
+  color:#666;
+  position: absolute;
+  top:30px;
+  left: 0;
+  right:0;
+  text-align: center
+}
+.contract-img{
+  width: 100%;
+  height:150px;
+}
+.contract-right{
+  width:53%;
+  float: right
+}
+.contract-right-top{
+  position: relative;
+  font-size: 14px;
+  color:#666;
+}
+.contract-right-top-img{
+  width:100%;
+  height:70px;
+}
+.contract-right-bottom-img{
+  width:100%;
+  height:70px;
+}
+.number{
+  position: absolute;
+  top:5px;
+  left:8px;
+}
+.tel-number{
+  position: absolute;
+  font-size: 12px;
+  line-height: 1.5;
+  top:25px;
+  left:8px;
+}
+.cell-number{
+  font-size: 14px;
+  color:#666;
+}
+.contract-right-bottom{
+    margin-top: 5px;
+    position: relative;
+    font-size: 14px;
+    color:#666;
+}
+.mail{
+  position: absolute;
+  bottom:23px;
+  right:0px;
+}
+.mail-number{
+  position: absolute;
+  bottom:8px;
+  right:0px;
+}
+.tel-icon{
+  width:48px;
+  height:48px;
+  position: fixed;
+  right:0;
+  bottom:120px;
+  z-index: 100;
+  border-radius: 50%;
+}

@@ -1,0 +1,19 @@
+<!--pages/contract/contract.wxml-->
+<view class="container">
+  <image src="../asscts/tel.jpg" class="tel-icon" bindtap='call'></image>
+  <view class="top-img-box">
+    <image src="http://mingheshiye.com/outlink/AFEIi68GEAQYACCoteLWBSidismsAzDuBTj8AkBo.png" class="top-img"></image>
+  </view>
+  <view class="company-add">
+    <text class="company-title">公司地址</text>
+    <text class="add">地址：浙江省宁波市鄞州区环城南路东段1728号</text>
+    <text class="mail-num">邮编：000000</text>
+    <map id="map" longitude="121.5948021412" latitude="29.8388989480" scale="18" markers="{{markers}}" bindmarkertap="markertap" show-location></map>
+  </view>
+  <view class="company-add2">
+    <text class="company-title">客服服务</text>
+    <text class="add">客服热线：0574-89026566</text>
+    <text class="mail-num">周一至周日：8:50-17:00</text>
+    <text class="mail-num email">邮箱：1852174600@qq.com</text>
+  </view>
+</view>

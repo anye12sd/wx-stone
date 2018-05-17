@@ -1,0 +1,32 @@
+<!--pages/about/about.wxml-->
+<view class="container">
+  <image src="../asscts/tel.jpg" class="tel-icon" bindtap='call'></image>
+  <view class="lineBox">
+    <text class="line">公司简介</text>
+  </view>
+  <view class="lineBox-bottom"></view>
+  <view class="introduce">
+    <text class="introduce-text" decode="{{true}}">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;铭禾石业工厂位于广东省云浮市，专业经营进口莎安娜米黄，欧典米黄等高端天然石材，从2009年至今，铭禾石业已经发展成一个集设计，精品工艺加工及安装为一体的企业。 专业的石材设计团队，为您提供专属的尊贵服务。公司同时引进了先进的国际一流设备，专注于别墅，高端会所的私人定制。经营范围广泛：罗马柱，水刀拼花，浮雕，护墙，电视玄关背景，楼梯踏步等。公司奉行“信誉第一，顾客第一”的企业宗旨，在推行现代化管理模式的同时，不断加大市场的开发力度，凭着丰富的管理经验、雄厚的经济实力、现代化的机械加工设备，良好的企业信誉和精湛的生产技术，关注每一个细节，全力打造一流加工技术的铭禾品牌。
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;同时，我们还有薄板系列石材，来满足客户不同的需求。这里还是高端欧洲进口瓷砖品牌的汇聚地，明禾吉利和豪宅两大欧洲进口瓷砖品牌的宁波地区代理商，更完善的产品线为客户带来更全面的服务。
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;服务宗旨：我们做石材，件件都是艺术品。无石材不豪宅，我们致力于打造宁波地区乃至全国的高端精品豪宅。
+    </text>
+    <image src="http://mingheshiye.com/outlink/AFEIi68GEAQYACD0sOLWBSj0jNysAzCyBTihAkBo.png" class="intro-img"></image>
+  </view>
+  <view class="lineBox">
+    <text class="line">工厂图片</text>
+  </view>
+  <view class="lineBox-bottom"></view>
+  <view class="factory">
+    <block wx:for="{{factory}}" wx:key="{{item.id}}">
+      <view class="example1 clear">
+        <view class="img-box">
+          <image src="{{item.src}}" class="company-img" mode="aspectFill" lazy-load='true'/> 
+          <text class="example-title">{{item.name}}</text>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>
+
+

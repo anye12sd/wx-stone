@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/product/product",
+    "pages/contract/contract",
+    "pages/about/about",
+    "pages/productDetail/productDetail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "铭禾石业",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#8a8a8a",
+    "selectedColor": "#56bb37",
+    "borderStyle": "#ccc",
+    "backgroundColor": "white",
+    "list": [
+      {
+        "selectedIconPath": "pages/asscts/1.png",
+        "iconPath": "pages/asscts/11.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "pages/asscts/2.png",
+        "iconPath": "pages/asscts/22.png",
+        "pagePath": "pages/product/product",
+        "text": "案例展示"
+      },
+      {
+        "selectedIconPath": "pages/asscts/3.png",
+        "iconPath": "pages/asscts/33.png",
+        "pagePath": "pages/about/about",
+        "text": "关于我们"
+      },
+      {
+        "selectedIconPath": "pages/asscts/4.png",
+        "iconPath": "pages/asscts/44.png",
+        "pagePath": "pages/contract/contract",
+        "text": "联系我们"
+      }
+    ]
+  }
+}

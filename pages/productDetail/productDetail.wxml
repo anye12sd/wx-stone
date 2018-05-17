@@ -1,0 +1,21 @@
+<!--pages/productDetail/productDetail.wxml-->
+<!-- <text class="information t">{{info.info}}：{{msg.name}}</text>
+<text class="time t">{{info.time}}：{{msg.time}}</text>
+<text class="material t" wx:if="{{info.material}}">{{info.material}}：{{msg.material}}</text>
+<text class="add t">{{info.add}}：{{msg.add}}</text>
+<text class="introduce t">{{info.intro}}：{{msg.introduce}}</text>
+<text class="effect t">{{info.feedback}}</text>
+<view class="img-box" >
+  <image wx:for="{{msg.feedbackImg}}" wx:key="{{msg.id}}" src="{{item}}" class="img-img"></image>
+</view> -->
+
+<view class="container">
+  <image src="../asscts/tel.jpg" class="tel-icon" bindtap='call'></image>
+  <view class="lineBox">
+    <text class="line">{{msg.name}}</text>
+  </view>
+  <view class="lineBox-bottom"></view>
+  <view class="img-box" >
+    <image wx:for="{{msg.feedbackImg}}" wx:key="{{msg.id}}" src="{{item}}" class="img-img"></image>
+  </view>
+</view>

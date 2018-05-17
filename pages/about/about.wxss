@@ -1,0 +1,82 @@
+/* pages/about/about.wxss */
+.lineBox{
+  font-size: 16px;
+  padding:15px 0;  
+  color:#666;
+  position: relative;
+}
+.line::before{
+  content:"";
+  position:absolute;
+  top:52%;
+  background: #999;
+  left:-25px;
+  width: 25%;
+  height: 1px;
+}
+.line::after{
+  content:"";
+  position:absolute;
+  top:52%;
+  background: #999;
+  right:-25px;
+  width: 25%;
+  height: 1px;
+}
+.lineBox-bottom{
+  width:100%;
+  height:1px;
+  background: #eee
+}
+.introduce{
+  padding:0 10px 10px 10px;
+  border-bottom: 8px solid #eee;
+}
+.introduce-text{
+  font-size: 14px;
+  color:#666;
+  text-indent: 40rpx;
+  text-align: left;
+}
+.intro-img{
+  width:100%;
+  height:130px;
+}
+.factory{
+  width:100%;
+  padding-top:20px
+}
+.example1{
+  width:45%;
+  display: inline-block
+}
+.example1:nth-child(even){
+  float:right;
+  padding-right: 10px;
+}
+.example1:nth-child(odd){
+  float:left;
+  padding-left: 10px
+}
+.img-box{
+  width:100%;
+}
+.company-img{
+  width:100%;
+  height:110px;
+}
+.example-title{
+  font-size: 14px;
+  color:#666;
+  height:40px;
+  line-height: 40px;
+}
+.tel-icon{
+  width:48px;
+  height:48px;
+  position: fixed;
+  right:0;
+  bottom:120px;
+  z-index: 100;
+  border-radius: 50%;
+}

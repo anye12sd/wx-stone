@@ -1,0 +1,61 @@
+/* pages/contract/contract.wxss */
+page{
+  background: #eee;
+}
+.clear::after{
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.top-img-box{
+  width:100%;
+  margin-bottom: 8px;
+}
+.top-img{
+  width: 100%;
+  height:190px;
+}
+.company-add{
+  background: #fff;
+  width: 100%;
+  padding:20px;
+  font-size: 14px;
+}
+.company-title{
+  color:#56bb37;
+  display: block;
+  padding-left:15px;
+  margin-left: 20px;
+  border-left:5px solid #56bb37
+}
+.add,.mail-num{
+  color:#666;
+  padding-left: 40px;
+  display: block;
+  font-size: 12px;
+  margin-top: 5px;
+}
+.company-add2{
+  background: #fff;
+  width: 100%;
+  font-size: 14px;
+}
+.email{
+  padding-bottom: 20px;
+}
+#map{
+  width: 100%;
+  height: 200px;
+  margin:10px auto 0 auto;
+}
+.tel-icon{
+  width:48px;
+  height:48px;
+  position: fixed;
+  right:0;
+  bottom:120px;
+  z-index: 100;
+  border-radius: 50%;
+}

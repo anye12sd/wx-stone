@@ -1,0 +1,18 @@
+<!--pages/product/product.wxml-->
+<view class="container">
+  <image src="../asscts/tel.jpg" class="tel-icon" bindtap='call'></image>
+  <view class="lineBox">
+    <text class="line">案例展示</text>
+  </view>
+  <view class="lineBox-bottom"></view>
+  <page class="pages">
+    <block wx:for="{{product}}" wx:key="{{item.id}}">
+      <view class="example1 clear" id="{{index}}" bindtap='toUrl'>
+        <view class="img-box">
+          <image src="{{item.src}}" class="company-img" mode="aspectFill" lazy-load='true'/> 
+          <text class="example-title">{{item.name}}</text>
+        </view>
+      </view>
+    </block>
+  </page> 
+</view>
